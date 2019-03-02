@@ -1,8 +1,6 @@
 library(plotly)
 library(shiny)
 library(zoo)
-library(ggridges)
-library(ggplot2)
 library(RColorBrewer)
 library(pracma)
 library(shinydashboard)
