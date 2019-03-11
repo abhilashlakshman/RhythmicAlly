@@ -746,7 +746,7 @@ shinyServer(function(input, output) {
     for (i in 1:length(n_samples[1,])){
       X[1,i] <- sum_fcostheta[1,i]/n_samples[1,i]
       Y[1,i] <- sum_fsintheta[1,i]/n_samples[1,i]
-      if (x[1,i]<0){
+      if (X[1,i]<0){
         mean_theta[1,i] <- (pi + atan(Y[1,i]/X[1,i])) * 180/pi
       } else {
         mean_theta[1,i] <- (atan(Y[1,i]/X[1,i])) * 180/pi
