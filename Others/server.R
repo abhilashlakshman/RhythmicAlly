@@ -606,11 +606,11 @@ shinyServer(function(input, output) {
     
     plots<-plot_ly()%>%
       layout(showlegend=FALSE,
-        angularaxis=list(
-          # rotation=90,
-          direction='counterclockwise'
-          # rotation=90
-        )
+             polar=list(
+               angularaxis=list(
+                 direction='clockwise'
+                 )
+               )
       )
     for (j in 1:length(for_profile[,1])){
       x=for_profile[j,input$ind_actogram_rose]
@@ -690,10 +690,10 @@ shinyServer(function(input, output) {
       # fillcolor=rgb(1,0,0,0.6)
     )%>%
       layout(showlegend=FALSE,
-             angularaxis=list(
-               # rotation=90,
-               direction='counterclockwise'
-               # rotation=90
+             polar=list(
+              angularaxis=list(
+                direction='clockwise'
+                ) 
              )
       )
     plots
