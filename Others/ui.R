@@ -27,7 +27,7 @@ shinyUI <- dashboardPage(
         tabItem(tabName = "input",
                 sidebarPanel(
                   # Input: Select a file ----
-                  fileInput("file", "Choose DAM monitor File",
+                  fileInput("file", "Choose input file",
                             multiple = FALSE,
                             accept = c("text/csv",
                                        "text/comma-separated-values,text/plain",
