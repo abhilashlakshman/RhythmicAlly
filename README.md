@@ -19,6 +19,6 @@ PLEASE CHECK THE LAST UPDATED DATE of RhythmicAlly.  IF THERE ARE UPDATES AT A D
 RhythmicAlly was created and is maintained by Abhilash Lakshman.  Any queries regarding usage or bugs in the code must be addressed to abhilashl@jncasr.ac.in.
 
 Abhilash L and Sheeba V (manuscript in preparation), RhythmicAlly: Your R and Shiny based open source ally for the analysis of biological rhythms.
-Until this gets published, we would appreciate it if you acknowledged us in case you use this software to analyse your datasets.
+Until this gets published, we would appreciate it if you acknowledged us in case you use this software to analyse your datasets. Also, please give this repo a 'star' if you found it useful in your analyses.
 
 PLEASE READ THE MANUAL BEFORE USING
