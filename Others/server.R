@@ -1,7 +1,6 @@
 library(plotly)
 library(shiny)
 library(zoo)
-library(RColorBrewer)
 library(pracma)
 library(shinydashboard)
 library(zeitgebr)
