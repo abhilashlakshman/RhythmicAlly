@@ -47,7 +47,7 @@ shinyServer(function(input, output) {
                    colors=colorRamp(c("white","darkblue","black","red")),
                    type="heatmap",
                    zauto=FALSE,
-                   zmin=0,
+                   zmin=input$min_z_full,
                    zmax=input$max_z_full)%>%
       add_segments(x=c(seq(s_per_day,length(raw[,1]),
                            by=s_per_day)),
@@ -102,7 +102,7 @@ shinyServer(function(input, output) {
                              # colors=colorRamp(c("black","cyan","lawngreen")),
                              type="heatmap",
                              zauto=FALSE,
-                             zmin=0,
+                             zmin=input$min_z,
                              zmax=input$max_z,
                              showscale=FALSE
       )%>%
@@ -233,7 +233,7 @@ shinyServer(function(input, output) {
           yaxis=list(title=i-(nplot-1),
             showticklabels=FALSE,
             showgrid=FALSE,
-            range=c(0,input$threshold*max(raw))
+            range=c(input$min_y,input$threshold*max(raw))
           ),
           barmode="stack",
           bargap=0
