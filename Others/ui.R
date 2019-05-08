@@ -72,7 +72,10 @@ shinyUI <- dashboardPage(
                 fluidRow(
                   sidebarPanel(
                     sliderInput(
-                      "max_z_full","highest z in your case (this would depend on how much acitvity there is/bin)",
+                      "min_z_full","lowest z in your case (this would depend on the values your variable of interest can take)",
+                      0,250,0,1),
+                    sliderInput(
+                      "max_z_full","highest z in your case (this would depend on how much activity there is/bin)",
                       1,250,10,1)
                   ),
                   box(plotlyOutput("full.monitor",height="500px"),
@@ -87,6 +90,9 @@ shinyUI <- dashboardPage(
                     # tabItem(tabName = "input2",
                             sidebarPanel(
                               numericInput("nplot","number of plots (in your actogram)",2,1,5,1),
+                              sliderInput(
+                      "min_z","lowest z in your case (this would depend on the values your variable of interest can take)",
+                      0,250,0,1),
                               sliderInput(
                                 "max_z","highest z in your case (this would depend on how much acitvity there is/bin)",
                                 1,250,10,1)
@@ -150,6 +156,7 @@ shinyUI <- dashboardPage(
                     sliderInput("threshold","threshold",
                                 0,2,0.5,0.01
                     ),
+                    numericInput("min_y","minimum y",0,0,200,0.5),
                     numericInput("first_time","starting time",4,1,24,0.01),
                     width = 2
                   ),
