@@ -214,7 +214,7 @@ shinyServer(function(input, output) {
     
     raw_pre<-as.matrix(raw_proc[,10+input$ind_actogram])
     dummy<-matrix(0,nrow=s_per_day*(nplot-1),ncol=1)
-    raw<-rbind(dummy,raw_pre)
+    raw<-rbind(dummy,raw_pre,dummy)
     time_series_phase<-as.matrix(df[,3])
     
     raw_list<-t(as.matrix(rollapply(raw[,1],width=s_per_day*nplot,by=s_per_day,as.numeric)))
