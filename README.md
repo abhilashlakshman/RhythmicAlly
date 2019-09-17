@@ -10,15 +10,12 @@ c)	Provides high interactivity with graphs
 d)	Allows visualisation and storing of data for a batch of individuals simultaneously and
 e)	Does what other free programs do but with fewer mouse clicks, thereby being more efficient and user-friendly.
 
-The first version of RhythmicAlly is available on Github and we aim to maintain the program with subsequent versions having updated methods of analysing and visualising time-series data.  Although the goal of RhythmicAlly was to cater to biological rhythms in the circadian range, changing parameters can also allow one to use the program for analysing ultradian or infradian rhythms.  Lastly, RhythmicAlly will appeal to researchers who are uncomfortable with coding due to the availability of a user-friendly GUI and also to researchers who are familiar with coding who can very easily modify the codes to tailor the program specifically to their data.
+Last update on 17th September 2019.
 
-Link to download RhythmicAlly:  https://github.com/abhilashlakshman/RhythmicAlly
+Minor update - Updated the arrangement of data for actograms such that the last cycle is blank so as to enable clear visualisation of all cycles in the plots.
 
-PLEASE CHECK THE LAST UPDATED DATE of RhythmicAlly.  IF THERE ARE UPDATES AT A DATE AFTER WHICH YOU HAVE DOWNLOADED THE PROGRAM, THEN YOU MUST DOWNLOAD THE MOST UPDATED VERSION.
+If you use our application for analysis, please cite the work:
 
-RhythmicAlly was created and is maintained by Abhilash Lakshman.  Any queries regarding usage or bugs in the code must be addressed to abhilashl@jncasr.ac.in.
-
-Abhilash L and Sheeba V (manuscript in preparation), RhythmicAlly: Your R and Shiny based open source ally for the analysis of biological rhythms.
-Until this gets published, we would appreciate it if you acknowledged us in case you use this software to analyse your datasets. Also, please give this repo a 'star' if you found it useful in your analyses.
+Abhilash, L. and Sheeba, V., 2019. RhythmicAlly: Your R and Shiny–Based Open-Source Ally for the Analysis of Biological Rhythms. Journal of biological rhythms, p.0748730419862474.
 
 PLEASE READ THE MANUAL BEFORE USING
